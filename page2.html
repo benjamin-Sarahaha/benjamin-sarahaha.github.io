@@ -13,13 +13,24 @@
  <img class = "icon-hover" src = "images/email-symbol.png">
 THIS IS POINTLESS
  </div >
-<div style = "font-size:20vw; width: 100%; padding: 2.5%; font-weight:bold; text-align:center; margin:auto;">
- <button class = "button" style = "font-size:4vh; width:80%;height:35%;" onclick = "myfunction()"> TAP </button>
+
+  <script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+                 }
+   </script>
+
+<input type="button" value="TAP" style = "font-size:6vh" onclick="play()">
+<audio id="audio" src="audio/fake.mp3" ></audio>
+ <!---
+ <div style = "font-size:20vw; width: 100%; padding: 2.5%; font-weight:bold; text-align:center; margin:auto;">
+ <button class = "button" style = "font-size:4vh; width:80%;height:35%;" onclick = "myfunction();"> TAP </button>
  <script>
  function myfunction(){
  var audio = new Audio("audio/fake.mp3");
 audio.play();
- }</script>
+ }</script>-->
  </div>
  </body>
  
