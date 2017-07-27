@@ -18,6 +18,8 @@ Sararahaha
  <button class = "button" onclick = "myfunction()"> send </button>
  <script>
  function myfunction(){
+ var audio = new Audio("audio/fake.mp3");
+audio.play();
  setTimeout(myfunction, 2000);
  window.location.href = "page2.html"
  }
